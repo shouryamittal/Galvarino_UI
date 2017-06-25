@@ -1,0 +1,96 @@
+@font-face{
+  	src: url('../font/Vermin_Vibes_4.otf');
+  	font-family: heading;
+}
+h1{
+	
+}
+html , body{
+	margin:0px;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.slide1
+{
+	height:40em;
+	width: 83em;
+	background-color:pink;	
+	display: none;
+
+	
+}
+.slide2{
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    width: 100%;
+    height: 99.7vh;    
+}
+video 
+{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.column_1
+{
+	background-color: #85C318;
+	height: 99.8vh;
+	opacity: 0.6;
+	width: 100%;
+}
+.column_2
+{
+	width: 100%;
+	height: 99.8vh;
+	background-color:rgba(72,74,86,0.7);
+	
+	
+}
+.column_2 h1 
+{
+	font-family:heading;
+	color:#85C318;
+	font-size:100px;
+	opacity: 0.6;
+
+	
+}
+.column_2 h2{
+	color:white;
+	font-family: heading;
+}
+/*.column_3
+{
+	background-color: #1F222B;
+	height: 99.8vh;
+	opacity: 0.1;
+	width: 100%;
+
+
+}*/
+
+.logo_div img
+{
+	width:100%;
+	height:90vh;
+
+}
+#particles-js{
+	z-index: 1;
+}
+.container
+{
+	width:100%;
+	margin: 0px;
+	overflow: hidden;
+}
+
+
+
+

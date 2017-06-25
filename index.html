@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/mdb.css">
+	<link rel="stylesheet" type="text/css" href="CSS/cs.css">
+	<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+
+	<script type="text/javascript">
+		/*$(document).ready(function(){
+				$(".slide1").hide();
+				$(".slide2").hide();
+				$(".slide3").hide();
+				$(".slide1").fadeIn(1000,function(){
+					$(".slide1").fadeOut(2000,function(){
+						$(".slide2").fadeIn(1000);
+					});
+				});
+			});*/
+		
+		$(document).ready(function(){
+			function call()
+			{
+				$('.quote2').hide();
+				$('.quote3').hide();
+				$('.quote1').fadeIn(1000,function(){
+					$('.quote1').fadeOut(5000,function(){
+						$('.quote2').fadeIn(1000,function(){
+							$('.quote2').fadeOut(5000,function(){
+								$('.quote3').fadeIn(1000,function(){
+									$('.quote3').fadeOut(5000,function(){
+										call();
+									});
+								});
+							});
+						});
+					});
+				});
+			}
+			call();
+				
+		});
+
+		$(".submit").click(function()
+		{
+			console.log("hello");
+		});
+	</script>	
+</head>
+
+<body>
+
+	<div class="slide1">
+			<h1>PAGE 1</h1>
+	</div>
+
+	<div class="slide2" >
+
+		<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline autoplay muted loop>
+			<source src="video/galvariono.mp4" type="video/mp4">
+		</video>
+
+		<div class="container">
+			<div class="row content_div">
+				<div class=" d-flex justify-content-center col-md-4 column_1">
+					<div class="p-2 mx-auto logo_div">
+							<img src="img/png/galvarino.png">
+					</div>
+				</div>
+
+				<div class="col-md-8 column_2 text-center" id="particles-js" style="padding:100px">
+					<script src="js/particles.js"></script>
+					<script src="js/app.js"></script>
+					<div>
+						<h1 class="">GALVARINO</h1>
+					</div>
+					
+					<p>&nbsp;</p>
+					<h2 class="">Something Big is Coming to <span style="color:#85C318">India!</span></h2>
+					<p>&nbsp;</p>
+					<div style="height:70px">
+						<div class="quote1">
+							<h3 style="color:white">Fitness is not about being better than someone else...<span style="color:#85C318"> It's about being better than you used to be.</span>
+							</h3>
+						</div>
+						<div class="quote2">
+							<h3 style="color:white"> Take care of your body.<span style="color:#85C318"> It's the only place you have to live</span>
+							</h3>
+						</div>
+
+						<div class="quote3">
+							<h3 style="color:white">If you can make it that far, what's stopping you from<span style="color:#85C318">  one more mile or one more set of reps?</span>
+							</h3>
+						</div>
+					</div>
+					<p>&nbsp;</p>
+									
+						
+					<div class="md-form">
+		    			<i class="fa fa-envelope prefix"></i>
+		    			<input type="text" id="form2" placeholder="Enter your Email" class="form-control mx-auto" style="background-color:white;padding:10px;border:2px solid #85C318;width:50%">
+		    			<button type="button" class="btn waves-effect submit" style="border:2px solid #85C318;background:transparent">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/tether.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.js"></script>
+</body>
+</html>
